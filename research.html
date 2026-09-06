@@ -1,0 +1,170 @@
+<title>Matao MacGoey - Research Interests</title>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<html>
+
+     <head>
+
+          <link rel = "stylesheet" href = "styles.css">
+
+     </head>
+
+     <body>
+
+          <div class="topnav">
+
+               <a href="index.html">Home</a>
+               <a class = "active" href="research.html">Research Interests</a>
+               <a href="cv.html">CV</a>
+
+          </div>
+
+          <h1>Research Interests</h1>
+
+          I am mainly interested in GKZ theory and its application to physics problems. In my final year at the University of Bath, I was lucky to be supervised by Dr. Francesca Caloro, who introduced me to this emerging research area. In particular, we looked at Feynman diagrams and correlation functions as GKZ systems.<br><br>
+
+          <h2>The walking path for pedestrians</h2>
+
+          <p>What I am interested in is something called GKZ. It stands for Gelfand, Kapranov and Zelevisnky, the mathematicians that invented it. Indeed, GKZ is an idea that came from maths, it has nothing to do with physics, but we (physicists) are starting to apply it to our physics problems.</p>
+          
+          <p>at play here covers both extremes of scales that science deals with: the subatomic and the cosmological. On the one hand, we deal with Feynman diagrams, which cover the former, i.e. how subatomic particles collide, how they interact. When we talk about subatomic, we are talking about things that are of the scale of one 10,000,000,000,000,000th of a centimeter. On the other end, on the cosmological end, we deal with correlation functions, and we talk about scales of the order of 100,000,000,000,000,000,000,000 kilometers. Remarkably, the same mathematics, i.e. GKZ, works on both ends of the spectrum. See <a href = "https://scaleofuniverse.com/en-gb" target = "_blank">this interactive tool</a> to see how tiny and enormous these scales really are.</p>
+
+          <p>For these two scales, there are two cases to be made for how cool the potential application to GKZ is.</p>
+
+          <h3>The microscopic case</h3>
+
+          <p>When physicists want to learn anything about how particles work and interact at the smallest scales, we need to use Feynman diagrams. Think experiments like the Large Hadron Collider at CERN, basically we smash particles together close to the speed of light and see what happens. That is an example of a particle "interaction". Unfortunately for us, we can't actually see what happened inside the collision because it was over in such a short amount of time, instead we look at what was left over after the collision happens. This is where Feynman diagrams come in, because they are the tool that helps us find out what was going on in those few instants that we can't see.</p>
+
+          <figure>
+               
+               <center>
+
+                    <img 
+                         src = "https://upload.wikimedia.org/wikipedia/commons/c/c5/Penguin_diagram.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+                         alt = "Penguin Feynman diagram"
+                         height = "300px"><br><br>
+
+                         <figcaption>Fig. 1: An important Feynman diagram: the penguin diagram
+                         </figcaption>
+                         
+                    </center>
+
+          </figure>
+
+          <p>The issue with Feynman diagrams is that they are very very hard to calculate, even using our best computers, and there is very little work-around to that. We need to use them, but it's simply too computationally expensive to do so, so we have to make approximations that make our predictions less accurate.</p>
+
+          <p>This is what GKZ can hopefully address. The idea is that GKZ could significantly simplify the calculation process. There are many viable ideas on how to do this, the idea that I focused on was using a specific result that arises from GKZ theory. The result is simple to understand: if we have one Feynman diagram which we can't calculate, and another whose solution is known, and there exists some way to "transform" from one diagram to the other, then GKZ tells us that their solutions two solutions are related. Even better, the relation (proportionality) is given to us by the transformation.</p>
+
+          <p>Why do I find this so cool: the whole mathematical framework of GKZ and how it fits into GKZ. There are many nuances that still need to be ironed out before GKZ can be </p>
+
+          <h3>The cosmological case</h3>
+
+          <p>On the other end, GKZ slots in to a different research program, called the cosmological bootstrap and cosmological correlation functions. These correlation functions come exactly as advertised: they tell us how correlated some points in space are. Literally, the point of a cosmological correlation function is to take any number of points and churn out a number telling us how correlated they are.</p>
+
+          <p>How do we know that they are even correlated in the first place? Because we know that the Universe started out at the Big Bang, and continued expanding from there. So points at polar opposite reaches of the cosmos now were, at the beginning of the Universe, actually pretty close to each other. Hence, we can measure, in a sense, the "correlation" between them.</p>
+          
+          <p>What is the ultimate goal in all of this? Eventually, the idea is to take these correlation functions, that tell us how the Universe is now, and put them through the intricate machinery of the cosmological bootstrap, and literally move back through time, to find the initial conditions of the Universe at the Big Bang. Obviously, this is an impossibly complex task, which is where GKZ comes in. As I understand it, GKZ's role here would be to facilitate and simplify the intensive computations at play.</p>
+
+          <p>Disclaimer: I did not work directly with the cosmological bootstrap, what I have written is only my (bachelor-level) understanding, and must be taken with a pinch of salt.</p>
+
+          <h2>For the interested reader</h2>
+          
+          The result from GKZ theory that I focused on is that any two GKZ systems related by an affine transformation are proportional. Specifically,
+
+          $$I' = \frac{1}{\det M}I,$$
+
+          where $M$ is the matrix representing the affine transformation and $I'$ and $I$ are GKZ integrals. The idea being that if we can find an affine transformation between some complicated Feynman diagram/correlation function to another GKZ integral with known analytical solution, we could skip computation entirely and apply the above equation, since $M$ would be known. <br><br>
+
+          A known example to illustrate this: the massless triangle Feynman integral and the triple-K correlation function:<br>
+          
+          <div class = "row">
+
+               <div class = "column">
+
+                    <figure>
+                         <center>
+                              <img 
+                                   src = "triangle.svg"
+                                   alt = "Massless triangle Feynman Diagram" 
+                                   style = "height:200px"/>
+                         </center><br>
+                         <figcaption>Fig. 1: Massless triangle Feynman diagram</figcaption>
+                    </figure>
+
+               </div>
+
+               <div class = "column">
+
+                    <figure>
+                         <center>
+                              <img 
+                                   src = "triplek.svg"
+                                   alt = "Triple-K correlation function as a Witten diagram" 
+                                   style = "height:200px"/>
+                         </center><br>
+                         <figcaption>Fig. 2: Triple-K correlation function as a Witten diagram</figcaption>
+                    </figure>
+
+               </div>
+
+          </div>
+
+          Their $A$-matrices can be found easily (by hand, or by using our code!) and subsequently their polytopes. They are:<br>
+
+          <div class = "row">
+
+               <div class = "column">
+
+                    <figure>
+                         <center>
+                              <img 
+                                   src = "trianglepoly.svg"
+                                   alt = "Massless triangle polytope" 
+                                   style = "height:200px"/>
+                         </center><br>
+                         <figcaption>Fig. 3: Massless triangle polytope</figcaption>
+                    </figure>
+
+               </div>
+
+               <div class = "column">
+
+                    <figure>
+                         <center>
+                              <img 
+                                   src = "triplekpoly.svg"
+                                   alt = "Triple-K polytope" 
+                                   style = "height:200px"/>
+                         </center><br>
+                         <figcaption>Fig. 4: Triple-K polytope</figcaption>
+                    </figure>
+
+               </div>
+
+          </div>
+
+          We can see that the overall structure of the polytopes is preserved, which is indicative of an affine transformation. Therefore, we can find the transformation's $M$-matrix and find the equation equating the results of the triangle and triple-K.<br><br>
+
+          In my dissertation I showed the above to be true, and introduced a two-dimensional analogue. What this investigation revealed were slight nuances in this GKZ result when placed in a physics context. They are related to the ordering of the columns of the $A$-matrices, which is a lesser issue compared to that of boundary/interior points of the polytopes. The latter issue cannot be simply explained away like the former, requiring a more comprehensive understanding of GKZ from its foundations. 
+
+          <br><br>
+
+          For a more thorough treatment, read my bachelor's dissertation below and find the code that we wrote for it <a href = "https://github.com/byrondenham/feynkit">here</a>.<br><br>
+
+          <center>
+
+               <embed 
+                    src = "MacGoeyMataoReport.pdf"
+                    width = "75%"
+                    height = "375px"
+                    type = "application/pdf"
+               >
+
+          </center>
+
+     </body>
+</html>

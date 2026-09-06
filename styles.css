@@ -1,0 +1,49 @@
+.topnav {
+     overflow: hidden;
+}
+
+.topnav a {
+     float: left;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+}
+
+.topnav a:hover {
+     background-color: #ddd;
+}
+
+.topnav a.active {
+     background-color: #233669;
+     color: white;
+}
+
+table, th, td {
+     border-collapse: collapse;
+}
+th, td {
+     padding: 5px;
+}
+
+* {
+     box-sizing: border-box;
+}
+
+.column {
+     float: left;
+     width: 50%;
+     padding: 5px;
+}
+
+.row::after {
+     content: "";
+     clear: both;
+     display: table;
+}
+
+body{
+
+     padding: 50px;
+
+}
