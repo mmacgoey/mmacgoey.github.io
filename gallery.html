@@ -1,0 +1,85 @@
+<style>
+     
+     * {
+          box-sizing: border-box;
+     }
+     
+     .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2px;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+     }
+     
+     .gallery-item img {
+          width: 100%;
+          height: auto;
+          display: block;
+     }
+     
+     @media only screen and (max-width: 768px) {
+          .gallery-item {
+               width: calc(50% - 6px);
+          }
+     }
+     
+     @media only screen and (max-width: 480px) {
+          .gallery-item {
+               width: calc(100% - 6px);
+          }
+     }
+     
+</style>
+
+<html>
+     
+     <head>
+          
+          <title>Matao MacGoey - Gallery</title>
+          <link rel = "stylesheet" href = "styles.css"
+
+     </head>
+
+     <body>
+          a
+          <div class="topnav">
+               
+               <a href="index.html">Home</a>
+               <a href="research.html">Research Interests</a>
+               <a href="cv.html">CV</a>
+               <a class = "active" href="gallery.html">Gallery</a>
+               
+          </div>
+          
+          <h1>Photo gallery</h1>
+
+          <h2>Live music</h2>
+     
+          <main class = "gallery" id = "my-gallery"></main>
+
+          <script type = "module">
+
+               import { images } from "./gallery-data.js";
+               import generateGallery from "./scripts/generate-gallery.js";
+
+               function shuffle(array) {
+                    const a = array.slice();               // work on a copy
+                    for (let i = a.length - 1; i > 0; i--) {
+                         const j = Math.floor(Math.random() * (i + 1)); // 0 ≤ j ≤ i
+                         [a[i], a[j]] = [a[j], a[i]];           // swap
+                    }
+                    return a;
+               }
+
+               const shuffledImages = shuffle(images)
+
+               const container = document.getElementById("my-gallery");
+               const nodes = generateGallery(shuffledImages);
+               nodes.forEach(node => container.appendChild(node));
+
+          </script>
+
+     </body>
+
+</html>

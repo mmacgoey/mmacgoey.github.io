@@ -1,3 +1,20 @@
+a:link {
+  color: rgb(5, 107, 138);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(5, 107, 138);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(239, 24, 178);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .topnav {
      overflow: hidden;
 }
